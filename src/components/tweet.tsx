@@ -3,6 +3,7 @@ import { ITweet } from "./timeline";
 import { auth, db, storage } from "../routes/firebase";
 import { deleteDoc, doc } from "firebase/firestore";
 import { deleteObject, ref } from "firebase/storage";
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -35,6 +36,7 @@ background-color: tomato;
   border-radius: 5px;
   cursor: pointer;
 `;
+
 
 export default function Tweet({ username, photo, tweet, userId, id }: ITweet) {
     const user = auth.currentUser;

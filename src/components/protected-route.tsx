@@ -1,3 +1,5 @@
+//로그인 여부를 확인
+
 import { Navigate } from "react-router-dom";
 import { auth } from "../routes/firebase";
 

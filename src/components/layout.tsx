@@ -6,18 +6,30 @@ import { auth } from "../routes/firebase";
 const Wrapper = styled.div`
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
   height: 100%;
   padding: 50px 0px;
   width: 100%;
   max-width: 860px;
 `;
 
+const Title = styled.span`
+justify-self: start;
+display: flex;
+`;
+
 const Menu = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
+  svg {
+   justify-self: start;
+    margin-top: 0;
+    width: 50px; 
+    height: auto; 
+    color:rgb(253, 236, 10);
+  }
 `;
 
 const MenuItem = styled.div`
@@ -53,6 +65,10 @@ export default function Layout() {
   return (
     <Wrapper>
       <Menu>
+      <Title><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+        <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clipRule="evenodd" />
+      </svg>
+      </Title>
         <Link to="/">
           <MenuItem>
             <svg

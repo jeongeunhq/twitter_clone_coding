@@ -10,6 +10,13 @@ padding: 50px, 0px;
 `;
 export const Title = styled.h1`
   font-size: 42px;
+  margin-top: 30px;
+  svg {
+  margin-top: 30px;
+    width: 50px; 
+    height: auto; 
+    color:rgb(253, 236, 10);
+  }
 `;
 export const Form = styled.form`
   margin-top: 50px;
